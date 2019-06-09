@@ -1,4 +1,4 @@
-.image {
+/* .image {
     overflow: hidden;
     transition-duration: 1s;
     transition-property: transform;
@@ -8,4 +8,33 @@
 .image:hover {
     transform: rotate(360deg);
    
+} */
+.image {
+    animation: rotating 1s linear infinite;
 }
+
+@keyframes rotating
+{    from 
+        {
+            transform: rotate(0deg);
+        }
+        to
+        {
+            transform:rotate(360deg);
+        }
+}
+
+@-webkit-keyframes rotating
+    {
+        from
+            {
+                transform: rotate(0deg);
+                -webkit-transform: rotate(0deg);
+            }
+        to
+            {
+                transform: rotate(360deg);
+                -webkit-transform: rotate(360deg);
+            }
+    }
+
