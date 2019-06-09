@@ -1,4 +1,6 @@
-/* .image {
+/* To have a singe rotation on hover 
+
+.image {
     overflow: hidden;
     transition-duration: 1s;
     transition-property: transform;
@@ -9,6 +11,8 @@
     transform: rotate(360deg);
    
 } */
+
+/* To have continuous clockwise rotation */
 .image {
     animation: rotating 1s linear infinite;
 }
@@ -24,7 +28,7 @@
         }
 }
 
-@-webkit-keyframes rotating
+/* @-webkit-keyframes rotating
     {
         from
             {
@@ -36,5 +40,5 @@
                 transform: rotate(360deg);
                 -webkit-transform: rotate(360deg);
             }
-    }
+    } */
 
